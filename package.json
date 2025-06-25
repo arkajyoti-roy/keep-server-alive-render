@@ -1,0 +1,17 @@
+{
+  "name": "keep-alive-server-render",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon api/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "Vercel keep-alive service to ping Render backend",
+  "dependencies": {
+    "node-fetch": "^2.6.12",
+    "nodemon": "^3.1.10"
+  }
+}
