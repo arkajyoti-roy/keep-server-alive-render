@@ -5,9 +5,7 @@ const app = express();
 const PORT = 3000; // You can change this if needed
 
 // Basic ping route
-app.get("/", (req, res) => {
-  res.send("✅ Server is running and will keep Render alive.");
-});
+
 
 // Native ping function using https module
 function pingRender() {
@@ -23,6 +21,11 @@ function pingRender() {
 // Use setInterval for periodic pinging (every 1 minute)
 setInterval(pingRender, 60_000); // 60000ms = 1 min
 
+
+app.get("/start", (req, res) => {
+  res.send("✅ Server is running and will keep Render alive.");
+   pingRender();
+});
 // Start local Express server
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
