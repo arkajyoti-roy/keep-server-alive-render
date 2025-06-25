@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon api/server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,7 @@
   "type": "commonjs",
   "description": "Vercel keep-alive service to ping Render backend",
   "dependencies": {
-    "node-fetch": "^2.6.12",
+    "express": "^5.1.0",
     "nodemon": "^3.1.10"
   }
 }
